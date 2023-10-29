@@ -8,7 +8,8 @@ use revolt_rocket_okapi::JsonSchema;
 
 
 // Queryable will generate the code needed to load the struct from an SQL statement
-#[derive(Queryable, Serialize, Ord, Eq, PartialEq, PartialOrd)]
+#[derive(Queryable, Serialize, Ord, Eq, PartialEq, PartialOrd, JsonSchema)]
+#[serde(crate = "rocket::serde")]
 pub struct Post {
     pub id: i32,
     pub title: String,

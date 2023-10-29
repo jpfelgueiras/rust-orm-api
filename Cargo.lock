@@ -36,6 +36,7 @@ dependencies = [
  "revolt_rocket_okapi",
  "rocket",
  "schemars",
+ "serde",
  "serde_json",
  "shared",
 ]

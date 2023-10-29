@@ -24,6 +24,7 @@ fn rocket() -> _ {
             post_handler::create_post_handler,
             post_handler::publish_post_handler,
             post_handler::delete_post_handler,
+            post_handler::health_checker_handler,
         ])
         .mount("/swagger", make_swagger_ui(&get_docs()))
 
