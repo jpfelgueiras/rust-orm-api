@@ -8,6 +8,7 @@ use serde::Serialize;
 use revolt_rocket_okapi::openapi;
 use revolt_rocket_okapi::JsonSchema;
 
+
 #[derive(Serialize, JsonSchema)]
 pub struct GenericResponse {
     pub status: String,
